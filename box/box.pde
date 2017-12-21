@@ -21,11 +21,11 @@ void draw() {
     stroke(200);
     strokeWeight(2);
 
-    // pushMatrix();
-    // rotateY(radians(sin(frameCount * .08) * 2));
-    // rotateX(radians(cos(frameCount * .08) * 2));
-    // box(size);
-    // popMatrix();
+    pushMatrix();
+    rotateY(radians(sin(frameCount * .08) * 2));
+    rotateX(radians(cos(frameCount * .08) * 2));
+    box(size);
+    popMatrix();
 
     for (int y = 0; y < 4; ++y) {
         for (int yi = 1; yi <= planes; ++yi) {
